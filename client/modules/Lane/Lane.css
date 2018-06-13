@@ -1,55 +1,74 @@
-/* Lane styles */
-.Lanes {
-  max-width: 1200px;
-  width: 100%;
-  padding: 10px;
-  margin: 0 auto;
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
 .Lane {
-  top: 40px;
-  position: relative;
-  min-height: 350px;
-  height: auto;
-  width: 30%;
-  padding: 15px;
-  margin: 10px;
-  background: #d3d1d1;
-  box-shadow: 5px 5px 10px 2px #222;
+  background: rgba(0,0,0,0.6);
   border-radius: 10px;
+  margin: 40px 10px;
+  width: 370px;
 }
 
- button {
-  border: 1px solid #999;
-  box-shadow: 2px 1px #444;
-  border-radius: 3px;
-  padding: 5px 7px;
-  margin: 10px;
-  background: #000000;
-  color: #FFF;
-  
-}
-
-.LaneHeader {
-  padding: 10px 10px;
-  background: #fff;
-  border-radius: 5px;
+.LaneDelete {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 5px;
   margin-top: 5px;
 }
 
+.LaneDelete button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: rgb(254, 180, 37);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.LaneName {
+  text-align: left;
+  border-bottom: 3px solid rgb(254, 180, 37);
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 10px 10px 0 0;
+}
+
+.LaneName span {
+  padding: 5px;
+  cursor: pointer;
+}
+
 .LaneAddNote {
-  margin-top: 15px;
-  border-top: 1px solid #eaeaea;
+  margin: 20px auto;
+}
+
+.AddLane, .LaneAddNote button {
+  background-color: #242424;
+  color: rgb(247, 247, 247);
+  padding: 5px 10px;
+  font-size: 15px;
+  width: 160px;
+  font-weight: 300;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: block;
 }
 
 .AddLane {
-    left: 20px;
-    top: 100px;
-    position: absolute;
+  width: 180px;
+  height: 40px;
+  font-size: 20px;
 }
 
-.LaneDelete button {
-  margin: 0 10px;
+
+.lanes {
+  display: flex;
+  align-items: flex-start;
 }

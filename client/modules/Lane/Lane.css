@@ -39,6 +39,7 @@
 .LaneName span {
   padding: 5px;
   cursor: pointer;
+  color: white;
 }
 
 .LaneAddNote {

@@ -45,8 +45,8 @@ export function updateNote(note) {
 
 export function updateNoteRequest(note) {
   return (dispatch) => {
-    return callApi(`notes/${noteId}`, 'put', note).then(noteResp => {
-      dispatch(updateNote(noteResp));
+    return callApi(`notes/${note.id}`, 'put', note).then(noteResp => {
+      dispatch(updateNote(note));
     });
   };
 }

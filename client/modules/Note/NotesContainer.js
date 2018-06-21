@@ -5,9 +5,10 @@ import { deleteNoteRequest, editNote, updateNoteRequest, moveWithinLane } from '
 
 const mapDispatchToProps = {
   onValueClick: editNote,
-  onUpdate: updateNoteRequest,
-  onDelete: deleteNoteRequest,
+  updateNote: updateNoteRequest,
+  deleteNote: deleteNoteRequest,
   moveWithinLane,
+  editNote,
 };
 
 export default connect(
